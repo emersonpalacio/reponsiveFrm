@@ -42,13 +42,16 @@
             // 
             // productoXcategoriaChart
             // 
+            chartArea1.AxisX.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount;
             chartArea1.Name = "ChartArea1";
             this.productoXcategoriaChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.productoXcategoriaChart.Legends.Add(legend1);
             this.productoXcategoriaChart.Location = new System.Drawing.Point(23, 142);
             this.productoXcategoriaChart.Name = "productoXcategoriaChart";
+            this.productoXcategoriaChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
             series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.productoXcategoriaChart.Series.Add(series1);
@@ -62,7 +65,7 @@
             this.productoPreferidoChart.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.productoPreferidoChart.Legends.Add(legend2);
-            this.productoPreferidoChart.Location = new System.Drawing.Point(345, 142);
+            this.productoPreferidoChart.Location = new System.Drawing.Point(514, 142);
             this.productoPreferidoChart.Name = "productoPreferidoChart";
             series2.ChartArea = "ChartArea1";
             series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
